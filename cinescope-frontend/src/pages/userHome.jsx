@@ -81,28 +81,28 @@ function UserHome() {
                 if (!token) return;
 
                 // Fetch user profile
-                const profileResponse = await fetch('https://cinescope-backend-jany.onrender.com/api/users/profile', {
+                const profileResponse = await fetch('https://cinescopemoviewebapp.onrender.com/api/users/profile', {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
                 });
 
                 // Fetch favorites
-                const favoritesResponse = await fetch('https://cinescope-backend-jany.onrender.com/api/users/favorites', {
+                const favoritesResponse = await fetch('https://cinescopemoviewebapp.onrender.com/api/users/favorites', {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
                 });
 
                 // Fetch currently watching
-                const currentlyWatchingResponse = await fetch('https://cinescope-backend-jany.onrender.com/api/users/currently-watching', {
+                const currentlyWatchingResponse = await fetch('https://cinescopemoviewebapp.onrender.com/api/users/currently-watching', {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
                 });
 
                 // Fetch watch history
-                const watchHistoryResponse = await fetch('https://cinescope-backend-jany.onrender.com/api/users/watch-history', {
+                const watchHistoryResponse = await fetch('https://cinescopemoviewebapp.onrender.com/api/users/watch-history', {
                     headers: {
                         'Authorization': `Bearer ${token}`
                     }
@@ -232,7 +232,7 @@ function UserHome() {
             }
     
             const isCurrentlyFavorite = favorites.some(fav => fav.tmdbId === movie.id);
-            const endpoint = `https://cinescope-backend-jany.onrender.com/api/users/favorites/${movie.id}`;
+            const endpoint = `https://cinescopemoviewebapp.onrender.com/api/users/favorites/${movie.id}`;
             const method = isCurrentlyFavorite ? 'DELETE' : 'POST';
     
             const response = await fetch(endpoint, {
@@ -278,7 +278,7 @@ function UserHome() {
             }
     
             const isCurrentlyWatching = currentlyWatching.some(m => m.tmdbId === movie.id);
-            const endpoint = `https://cinescope-backend-jany.onrender.com/api/users/currently-watching/${movie.id}`;
+            const endpoint = `https://cinescopemoviewebapp.onrender.com/api/users/currently-watching/${movie.id}`;
             const method = 'POST'; // Always POST to toggle
     
             const response = await fetch(endpoint, {
@@ -327,7 +327,7 @@ function UserHome() {
             const token = localStorage.getItem('token');
             if (token) {
                 // Add to recently watched
-                const response = await fetch(`https://cinescope-backend-jany.onrender.com/api/users/recently-watched/${movie.id}`, {
+                const response = await fetch(`https://cinescopemoviewebapp.onrender.com/api/users/recently-watched/${movie.id}`, {
                     method: 'POST',
                     headers: {
                         'Authorization': `Bearer ${token}`
@@ -368,7 +368,7 @@ function UserHome() {
                 throw new Error('No authentication token found');
             }
 
-            const response = await fetch('https://cinescope-backend-jany.onrender.com/api/users/profile', {
+            const response = await fetch('https://cinescopemoviewebapp.onrender.com/api/users/profile', {
                 method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json',
