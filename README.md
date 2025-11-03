@@ -19,7 +19,7 @@ CineScope is a modern movie streaming platform designed to provide users with a 
 
 ## 🚀 Deployment
 
-**Live Demo:** [CineScope Platform](https://cinescope-frontend-y9ee.onrender.com/)
+**Live Demo:** [CineScope Platform](https://cinescopemoviewebapplication.onrender.com)
 
 ---
 
@@ -30,7 +30,6 @@ CineScope is a modern movie streaming platform designed to provide users with a 
 - [Data Model](#data-model)
 - [User Stories](#user-stories)
 - [Mockups](#-mockups)
-- [Team Work Division](#team-work-division)
 - [Admin Dashboard Features](#admin-dashboard-features)
 - [Tech Stack](#-tech-stack)
 - [Database Schema](#-database-schema)
@@ -46,17 +45,6 @@ CineScope is a modern movie streaming platform designed to provide users with a 
 **Start Date:** April 7, 2025  
 **End Date:** April 18, 2025
 
-
-## 👥 Contributors
-
-| Name          | Role                     |
-|---------------|--------------------------|
-| **Khulekani mtshali** | Frontend Lead            |
-| **Matimu Baloyi**    | Backend Lead, DevOps     |
-| **Luyanda Xhakaza**   | Database Architect       |
-| **Arise Rifuwo Dzamukeri**     | QA Lead, UI/UX Designer  |
-| **Dembe Makhari**     | UI/UX Designer           |
-| **Masingita Otis Maluleke** | Fullstack Developer      |
 
 ---
 
@@ -138,19 +126,6 @@ The platform is designed with a modular architecture to ensure scalability and m
 - "Continue Watching" section
 - Watchlist
 - AI recommendations
-
----
-
-## Team Work Division
-
-| Role              | Tasks                                    |
-|-------------------|------------------------------------------|
-| **Frontend Lead** | React components, Redux state management |
-| **Backend Lead**  | API development, TMDb integration        |
-| **Database Architect** | MongoDB schema design, TypeORM setup     |
-| **DevOps Engineer** | CI/CD pipeline, AWS deployment           |
-| **QA Lead**       | Manual testing, bug tracking             |
-| **UI/UX Designer**| Mockups, styled components               |
 
 ---
 
