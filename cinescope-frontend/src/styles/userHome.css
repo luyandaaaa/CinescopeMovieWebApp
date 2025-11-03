@@ -1,0 +1,94 @@
+/* Container styles */
+.user-home-container {
+    padding: 15px;
+}
+
+@media (min-width: 768px) {
+    .user-home-container {
+        padding: 20px 30px;
+    }
+}
+
+/* Responsive text styles */
+.responsive-text {
+    font-size: 0.9rem;
+}
+
+@media (max-width: 480px) {
+    .responsive-text {
+        display: none;
+    }
+}
+
+/* Utility classes */
+.mobile-hidden {
+    display: block;
+}
+
+@media (max-width: 480px) {
+    .mobile-hidden {
+        display: none;
+    }
+}
+
+/* Tablet styles */
+@media (max-width: 768px) {
+    .tablet-view {
+        /* Add your tablet-specific styles */
+        width: 100%;
+        padding: 10px;
+    }
+}
+
+/* Mobile styles */
+@media (max-width: 480px) {
+    .mobile-view {
+        /* Add your mobile-specific styles */
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+/* Header right area (previously inline styles) */
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: flex-end;
+    flex: 1;
+}
+
+@media (max-width: 768px) {
+    .header-right {
+        justify-content: center;
+        flex: none;
+        width: 100%;
+    }
+}
+
+/* Profile button */
+.profile-button {
+    cursor: pointer;
+    font-size: 1.2rem;
+    color: #e50914;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+@media (max-width: 480px) {
+    .profile-button {
+        font-size: 1rem;
+    }
+}
+
+/* Section margins */
+.section-margin {
+    margin: 30px 0;
+}
+
+@media (max-width: 768px) {
+    .section-margin {
+        margin: 20px 0;
+    }
+}
