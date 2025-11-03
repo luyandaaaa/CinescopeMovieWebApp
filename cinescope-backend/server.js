@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-    origin: 'https://cinescope-frontend-y9ee.onrender.com'
+    origin: 'https://cinescopemoviewebapplication.onrender.com'
   }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
